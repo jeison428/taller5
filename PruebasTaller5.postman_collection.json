@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "d332a909-60dc-4c93-bce4-381b20ad155e",
+		"name": "PruebasTaller5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PruebaPatronBusqueda",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/docente/busqueda-patron/10667778?nombres=jo&apellidos=go&correo=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"docente",
+						"busqueda-patron",
+						"10667778"
+					],
+					"query": [
+						{
+							"key": "nombres",
+							"value": "jo"
+						},
+						{
+							"key": "apellidos",
+							"value": "go"
+						},
+						{
+							"key": "correo",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PruebaNombreOrdenId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/docente/busqueda-ordenada?nombres=jose",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"docente",
+						"busqueda-ordenada"
+					],
+					"query": [
+						{
+							"key": "nombres",
+							"value": "jose"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PruebaGrupInv&Vinculacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/docente/busqueda-grupo-vinculacion/IDIS?vinculacion=planta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"docente",
+						"busqueda-grupo-vinculacion",
+						"IDIS"
+					],
+					"query": [
+						{
+							"key": "vinculacion",
+							"value": "planta"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

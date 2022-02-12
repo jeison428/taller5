@@ -1,0 +1,29 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: taller5-busquedas
+  datasource:
+    url: jdbc:mysql://localhost/taller5-busquedas?useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+    username: root
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect  
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql: 
+              BasicBinder: TRACE
